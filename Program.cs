@@ -1,14 +1,7 @@
-﻿var input = Console.ReadLine();
+﻿var index = 0;
 
-switch (input)
+while (index < 10)
 {
-    case "Hello":
-        Console.WriteLine("Hello, how are you?");
-        break;
-    case "I'm well, thank you.":
-        Console.WriteLine("Good to hear. I'm also well!");
-        break;
-    default:
-        Console.WriteLine("Yeah, this is too advanced for me.");
-        break;
+    Console.WriteLine(index);
+    index++;
 }
