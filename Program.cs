@@ -1,7 +1,8 @@
 ﻿var index = 0;
 
-while (index < 10)
+do
 {
     Console.WriteLine(index);
     index++;
 }
+while (index < 10);
