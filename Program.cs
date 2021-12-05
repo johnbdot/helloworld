@@ -23,6 +23,6 @@ while (i == 0)
     {
         Console.WriteLine($"Greetings! You are {age} years old.");
     }
-    Console.WriteLine($"You have {years} until you are 100 years old!");
+    Console.WriteLine($"You have {years} years left until you are 100 years old!");
     Console.WriteLine();
 }
