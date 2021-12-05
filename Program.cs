@@ -1,8 +1,14 @@
 ﻿var index = 0;
 
-do
-{
+while (index < 10)
+{   
+    Console.WriteLine("Printed from while loop");
     Console.WriteLine(index);
     index++;
 }
-while (index < 10);
+
+for(var i = 0; i < 10; i++)
+{
+    Console.WriteLine("Printed from for loop");
+    Console.WriteLine(i);
+}
