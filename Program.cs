@@ -1,10 +1,11 @@
-﻿var numberFromFunction = myFunction();
+﻿int index = 32;
 
-Console.WriteLine($"This is the number from myFunction: {numberFromFunction}");
+int newIndex = myFunction(index);
 
-static int myFunction()
+Console.WriteLine($"This is the number from myFunction: {newIndex}");
+
+static int myFunction(int myIndex)
 {
-    var myIndex = 0;
     Console.WriteLine(myIndex += 5);
     return myIndex;
 }
