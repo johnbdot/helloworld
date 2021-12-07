@@ -1,11 +1,16 @@
-﻿int index = 32;
+﻿Car sportsCarObject = new Car();
+Car van = new Car();
 
-int newIndex = myFunction(index);
+var carName = sportsCarObject.CarName("sports car");
+var vanName = van.CarName("van");
 
-Console.WriteLine($"This is the number from myFunction: {newIndex}");
+Console.WriteLine(carName);
+Console.WriteLine(vanName);
 
-static int myFunction(int myIndex)
+class Car
 {
-    Console.WriteLine(myIndex += 5);
-    return myIndex;
+    public string CarName(string carType)
+    {
+        return $"This is a {carType}.";
+    }
 }
