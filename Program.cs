@@ -1,15 +1,20 @@
-﻿Car sportsCarObject = new Car();
-Car van = new Car();
+﻿class Program
+{
+    static void Main(string[] args)
+    {
+        Program programObject = new Program();
+        programObject.SecretFunction();
+    }
 
-var carName = sportsCarObject.CarName("sports car");
-var vanName = van.CarName("van");
-
-Console.WriteLine(carName);
-Console.WriteLine(vanName);
+    void SecretFunction()
+    {
+        Console.WriteLine("You found me.");
+    }
+}
 
 class Car
 {
-    public string CarName(string carType)
+    public static string CarName(string carType)
     {
         return $"This is a {carType}.";
     }
