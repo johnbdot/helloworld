@@ -2,20 +2,28 @@
 {
     static void Main(string[] args)
     {
-        Program programObject = new Program();
-        programObject.SecretFunction();
-    }
+        Vehicle vehicle = new Vehicle();
+        Van van = new Van();
+        Car car = new Car();
 
-    void SecretFunction()
-    {
-        Console.WriteLine("You found me.");
+        van.canStandUpInside = true;
     }
 }
 
-class Car
+class Vehicle
 {
-    public static string CarName(string carType)
-    {
-        return $"This is a {carType}.";
-    }
+    public bool hasWheels = true;
+    public string make;
+    public string model;
+}
+
+class Van: Vehicle
+{
+    public int numberOfRowsForSeats;
+    public bool canStandUpInside;
+}
+
+class Car: Vehicle
+{
+    public bool hasOnlyFourSeats;
 }
